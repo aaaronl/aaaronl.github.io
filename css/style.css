@@ -41,8 +41,6 @@
     margin-top: -25px;
     position: absolute;
     text-align: center;
-    
-    
 }
 
 .bar{
@@ -164,7 +162,7 @@ opacity:0.1}
 -------------------------------------------------*/
 body {
     overflow-x: hidden;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;*/
 }
 
 p {
