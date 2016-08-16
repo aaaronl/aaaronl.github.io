@@ -8,17 +8,24 @@ $(document).ready(function() {
 	// Highlight the top nav as scrolling occurs
 	$("body").scrollspy({target: ".navbar-fixed-top"});
 	
-	// chart loding
-	var chart = window.chart = $(".chart").data("easyPieChart");
-	$(".js_update").on("click", function() {
-		chart.update(Math.random()*100);
+	// Skills animation
+	var skillIndex = 0;
+	$(document).scroll(function(){
+		var top = $('.skills').height()-$(window).scrollTop();
+		if(top<-700){
+			if(skillIndex==0){	
+				$('.chart').easyPieChart({
+					easing: 'easeOutBounce',
+					onStep: function(from, to, percent) {
+						$(this.el).find('.percent').text(Math.round(percent));
+					}
+				});
+				
+			}
+			skillIndex++;
+		}
 	});
-	/*
-	$(window).load(function() {
-		
-		
-	});
-	*/
+
 });
 
 
@@ -60,7 +67,13 @@ $(document).scroll(function(){
 });
 
 
-
+$(window).load(function() {
+		var chart = window.chart = $(".chart").data("easyPieChart");
+		$(".js_update").on("click", function() {
+			chart.update(Math.random()*100);
+			console.log("test");
+		});
+	});
 
 
 // Closes the Responsive Menu on Menu Item Click
