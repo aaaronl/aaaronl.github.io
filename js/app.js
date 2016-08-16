@@ -7,8 +7,18 @@ $(document).ready(function() {
 	
 	// Highlight the top nav as scrolling occurs
 	$("body").scrollspy({target: ".navbar-fixed-top"});
-	    
- 
+	
+	// chart loding
+	var chart = window.chart = $(".chart").data("easyPieChart");
+	$(".js_update").on("click", function() {
+		chart.update(Math.random()*100);
+	});
+	/*
+	$(window).load(function() {
+		
+		
+	});
+	*/
 });
 
 
@@ -50,14 +60,7 @@ $(document).scroll(function(){
 });
 
 
-// chart loding
-$(window).load(function() {
-	
-	var chart = window.chart = $('.chart').data('easyPieChart');
-	$('.js_update').on('click', function() {
-		chart.update(Math.random()*100);
-	});
-});
+
 
 
 // Closes the Responsive Menu on Menu Item Click
