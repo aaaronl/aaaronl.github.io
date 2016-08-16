@@ -12,7 +12,7 @@ $(document).ready(function() {
 	var skillIndex = 0;
 	$(document).scroll(function(){
 		var top = $('.skills').height()-$(window).scrollTop();
-		if(top<-700){
+		if(top<-600){
 			if(skillIndex==0){	
 				$('.chart').easyPieChart({
 					easing: 'easeOutBounce',
