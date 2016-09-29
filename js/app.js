@@ -8,6 +8,22 @@ $(document).ready(function() {
 	// Highlight the top nav as scrolling occurs
 	$("body").scrollspy({target: ".navbar-fixed-top"});
 	
+	// jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function() {
+	    $('a.page-scroll').bind('click', function(event) {
+	        var $anchor = $(this);
+	        $('html, body').stop().animate({
+	            scrollTop: $($anchor.attr('href')).offset().top
+	        }, 1500, 'easeInOutExpo');
+	        event.preventDefault();
+	    });
+	});
+	
+	// Closes the Responsive Menu on Menu Item Click
+	$(".navbar-collapse ul li a").click(function() {
+	    $(".navbar-toggle:visible").click();
+	});
+	
 	// Skills animation
 	var skillIndex = 0;
 	$(document).scroll(function(){
@@ -30,16 +46,7 @@ $(document).ready(function() {
 
 
 /*
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+
 
 
 // for skill chat jquary
@@ -76,10 +83,7 @@ $(window).load(function() {
 	});
 
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
-});
+
 
 
 // Waiting for the entire site to load
