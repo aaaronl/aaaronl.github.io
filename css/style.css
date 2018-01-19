@@ -175,6 +175,10 @@ p.large {
     font-size: 16px;
 }
 
+p.ex-large {
+    font-size: 20px;
+}
+
 .text-dark {
     color: #8c9099;
 }
