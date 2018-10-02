@@ -10,9 +10,9 @@ $(document).ready(function() {
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 	    $('a.page-scroll').bind('click', function(event) {
-	        var $anchor = $(this);
+			var $anchor = $(this);
 	        $('html, body').stop().animate({
-	            scrollTop: $($anchor.attr('href')).offset().top
+	            scrollTop: $($anchor.attr('href')).offset().top-20
 	        }, 1500, 'easeInOutExpo');
 	        event.preventDefault();
 	    });
@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var skillIndex = 0;
 	$(document).scroll(function(){
 		var top = $('.skills').height()-$(window).scrollTop();
-		if(top<-450){
+		if(top<-6100){
 			if(skillIndex==0){	
 				$('.chart').easyPieChart({
 					easing: 'easeOutBounce',
