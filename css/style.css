@@ -426,7 +426,7 @@ section h3.section-subheading {
 }
 
 .service-heading {
-    margin: 5px 0 15px;
+    margin: 15px 0 15px;
     text-transform: none;
     color: #555;
 }
@@ -572,7 +572,7 @@ header .intro-text .intro-heading {
 .skills .skills{
     margin:0 auto;
     margin-bottom:23px;
-    text-align:center;
+    /*text-align:center;*/
     padding:0px;
     float:none;
 }
@@ -592,6 +592,12 @@ header .intro-text .intro-heading {
 .skills .skills h4{
     font-weight:700;
     text-transform:uppercase;
+}
+
+.btn-skill {
+	width: 75%;
+	margin-left: 20px;
+	margin-bottom: 23px;
 }
 
 .skilBg{
