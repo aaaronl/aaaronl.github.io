@@ -595,8 +595,9 @@ header .intro-text .intro-heading {
 }
 
 .btn-skill {
-	width: 75%;
+	width: 94%;
 	margin-left: 20px;
+    margin-right: 20px;
 	margin-bottom: 23px;
 }
 
