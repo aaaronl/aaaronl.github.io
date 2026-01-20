@@ -1,30 +1,23 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-	    <meta name="description" content="Aaron Lawrence Product Design and Development">
-	    <meta name="author" content="Aaron Lawrence">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Aaron Lawrence Product Design and Development">
+		<meta name="author" content="Aaron Lawrence">
 		<title>Aaron Lawrence - Online Resume and Portfolio</title>
-		
+
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css" type="text/css">
-		<link rel="stylesheet" href="css/animate.css" type="text/css">
-		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
+
 		<!-- Fonts -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" type="text/css">
-	    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" type="text/css">
-		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-		
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	    <!--[if lt IE 9]>
-	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	    <![endif]-->		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vehovbd2ZPUCDCxXNIaYzKPY8PREFSCbYT4FTfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	</head>
 	<body id="page-top" class="index">
 		
@@ -40,27 +33,23 @@
 		</div>
 		
 		<!-- Navigation -->
-	    <nav class="navbar navbar-default navbar-fixed-top">
+	    <nav class="navbar navbar-expand-md navbar-default fixed-top" aria-label="Main navigation">
 	        <div class="container">
 	            <div class="navbar-header page-scroll">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
+	                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+	                    <span class="navbar-toggler-icon"></span>
 	                </button>
 	                <!-- <a class="navbar-brand page-scroll" href="#page-top">Aaron Lawrence</a> -->
 	            </div>
 	
 	            <!-- navbar-collapse -->
-	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                <ul class="nav navbar-nav navbar-right">
-	                    <li class="hidden"><a href="#page-top"></a></li>
-	                    <li><a class="page-scroll" href="#about">About</a></li>
-	                    <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-						<li><a class="page-scroll" href="#resume">Resume</a></li>
-						<li><a class="page-scroll" href="#skills">Skills</a></li>
-	                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+	            <div class="collapse navbar-collapse" id="mainNavbar">
+	                <ul class="navbar-nav ms-auto">
+	                    	                    <li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
+	                    <li class="nav-item"><a class="nav-link page-scroll" href="#portfolio">Portfolio</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll" href="#resume">Resume</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll" href="#skills">Skills</a></li>
+	                    <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
 	                </ul>
 	            </div>
 	            <!-- navbar-collapse End -->
@@ -86,10 +75,10 @@
 					<div class="col-lg-12 text-center wow fadeInDown animated">
 	                    <h2 class="section-heading">About me</h2>
 	                </div>
-	                <div class="col-lg-4 text-center col-md-4 col-sm-4 col-xs-12 pull-right media wow zoomIn animated">
-	                    <img alt="" class="img-circle img-me" src="img/me.jpg">
+	                <div class="col-lg-4 text-center col-md-4 col-sm-4 col-12 float-end media wow zoomIn animated">
+	                    <img alt="Aaron Lawrence profile photo" class="img-circle img-me rounded-circle" src="img/me.jpg">
 	                </div>
-	                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left media">
+	                <div class="col-lg-7 col-md-7 col-sm-7 col-12 float-start media">
 	                    <h3>Aaron Lawrence</h3>
 	                    <p class="text-muted">Hi, I am a hands-on technology leader with 20 years of experience creating solutions for the mortgage industry. 
 							In addition, I have an extensive background in software development, information security, and IT governance.</p>
@@ -128,10 +117,10 @@
 					<!-- Development -->
 
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioefolderLWC" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioefolderLWC" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/efolder-lwc-sm.png" class="img-responsive" alt="" width="400" height="300">
@@ -143,10 +132,10 @@
 					</div>
 					
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal28" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal28" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/bolt-app-sm.jpg" class="img-responsive" alt="" width="400" height="300">
@@ -157,10 +146,10 @@
 	                    </div>
 					</div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal26" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal26" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/caliber-mobile-sm.jpg" class="img-responsive" alt="" width="400" height="300">
@@ -171,10 +160,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal27" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal27" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/h20-mobile-sm.jpg" class="img-responsive" alt="" width="400" height="300">
@@ -185,10 +174,10 @@
 	                    </div>
 	                </div>
 	               	<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal1" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/ginger-sm.png" class="img-responsive" alt="">
@@ -199,10 +188,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal2" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/rates-sm.png" class="img-responsive" alt="">
@@ -213,10 +202,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal3" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/bestex-sm.png" class="img-responsive" alt="">
@@ -230,10 +219,10 @@
 	                <!-- Encompass -->
 	                
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass1" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioEncompass1" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/enc-hmda-sm.jpg" class="img-responsive" alt="">
@@ -245,10 +234,10 @@
 	                </div>
 	                
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass2" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioEncompass2" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/enc-compliance-sm.jpg" class="img-responsive" alt="">
@@ -260,10 +249,10 @@
 	                </div>
 	                
 	                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass3" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioEncompass3" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/dev/enc-discrepancy-sm.jpg" class="img-responsive" alt="">
@@ -277,10 +266,10 @@
 	                <!-- Photography -->
 	                
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal4" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo1-sm.jpg" class="img-responsive" alt="">
@@ -291,10 +280,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal5" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo2-sm.jpg" class="img-responsive" alt="">
@@ -305,10 +294,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal6" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo3-sm.jpg" class="img-responsive" alt="">
@@ -319,10 +308,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal7" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo4-sm.jpg" class="img-responsive" alt="">
@@ -333,10 +322,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal8" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo5-sm.jpg" class="img-responsive" alt="">
@@ -347,10 +336,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal9" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/photography/photo6-sm.jpg" class="img-responsive" alt="">
@@ -364,10 +353,10 @@
 					<!-- Artwork -->
 					
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal23" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal23" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/wheel.png" class="img-responsive" alt="" width="360">
@@ -378,10 +367,10 @@
 	                    </div>
 	                </div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal24" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal24" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/intertwined.png" class="img-responsive" alt="" width="360">
@@ -392,10 +381,10 @@
 	                    </div>
 					</div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal25" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal25" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/insideout.png" class="img-responsive" alt="" width="360">
@@ -406,10 +395,10 @@
 	                    </div>
 	                </div>
 					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal20" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/hexagon.png" class="img-responsive" alt="" width="360">
@@ -420,10 +409,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal11" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/art2-sm.png" class="img-responsive" alt="">
@@ -434,10 +423,10 @@
 	                    </div>
 	                </div>
 	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
+	                    <a href="#portfolioModal15" class="portfolio-link" data-bs-toggle="modal">
 	                        <div class="portfolio-hover">
 	                            <div class="portfolio-hover-content">
-	                                <i class="fa fa-search-plus fa-3x"></i>
+	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
 	                            </div>
 	                        </div>
 	                        <img src="img/art/art7-sm.png" class="img-responsive" alt="">
@@ -473,7 +462,7 @@
 	                        <li class="timeline-inverted">
 	                            <div class="timeline-image wow zoomIn animated">
 	                                <span class="ico">
-	                                    <i class="fa fa-briefcase"></i>
+	                                    <i class="fa-solid fa-briefcase"></i>
 	                                </span>
 	                            </div>
 	                            <div class="timeline-panel wow fadeInRight animated">
@@ -580,7 +569,7 @@
 	                        <li class="timeline-inverted">
 	                            <div class="timeline-image wow zoomIn animated">
 	                                <span class="ico">
-	                                    <i class="fa fa-graduation-cap"></i>
+	                                    <i class="fa-solid fa-graduation-cap"></i>
 	                                </span>
 	                            </div>
 	                            <div class="timeline-panel wow fadeInRight animated">
@@ -636,130 +625,130 @@
 	            </div>
 				<h3 class="service-heading">Certifications</h3>
 	            <div class="row">
-					<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+					<div class=" col-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
 						<span class="btn btn-primary btn-skill">Salesforce Certified Platform Developer I</span>
 					</div>
-					<div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+					<div class=" col-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
 						<span class="btn btn-primary btn-skill">Encompass Certified Administrator</span>
 					</div>
 	            </div>
 	            <h3 class="service-heading">Industry</h3>
 	            <div class="row">
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Technology Strategy</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Product Development</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Business Analysis</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Project Management</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">User Experience</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Mortgage Lending</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Information Security</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Construction Lending</span>
 					</div>
 	            </div>
 	            <h3 class="service-heading">Applications</h3>
 	            <div class="row">
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Salesforce</span>
 					</div>
-	            	<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+	            	<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Encompass 360</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Microsoft 365</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Visual Studio</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Jira</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Tableau</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">CRM Analytics</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">XCode</span>
 					</div>
 	            </div>
 	           	<h3 class="service-heading">Technologies</h3>
 	            <div class="row">
-		            <div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+		            <div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Apex</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">JavaScript</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">HTML/CSS</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">.NET (C#, VB)</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Node.js</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Swift</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">PHP</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Git</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">SQL</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Snowflake</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">AWS</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Azure</span>
 					</div>
 				</div>
 					<h3 class="service-heading">Governance</h3>
 	            <div class="row">
-		            <div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+		            <div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Policies</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Procedures</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Business Continuity</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Disaster Recovery</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Incident Response</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Monitoring</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">COBIT/FAIR</span>
 					</div>
-					<div class=" col-xs-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
+					<div class=" col-12 col-sm-3 col-md-3 col-lg-3 skillsArea">
 						<span class="btn btn-primary btn-skill">Procurement</span>
 					</div>
 				</div>
@@ -787,16 +776,16 @@
 							<p class="ex-large">I would love to speak to you about your next project or other business opportunities.</p>
                             <div class="col-md-6">
                                 <div class="form-text wow fadeIn animated">
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa fa-envelope-o"></i> <a href="mailto:itsaaaron@gmail.com">its@aaaron.io</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa fa-link"></i> <a href="http://aaaron.io">aaaron.io</a></p>
-									<p class="wow fadeInUp animated ex-large"> <i class="fa fa-map-marker"></i> PO Box 742 Kenwood, CA 95452</p>
+                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-regular fa-envelope"></i> <a href="mailto:itsaaaron@gmail.com">its@aaaron.io</a></p>
+                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-link"></i> <a href="http://aaaron.io">aaaron.io</a></p>
+									<p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-location-dot"></i> PO Box 742 Kenwood, CA 95452</p>
                                 </div>
                             </div>
 							<div class="col-md-6">
                                 <div class="form-text wow fadeIn animated">
-									<p class="wow fadeInUp animated ex-large"> <i class="fa fa-linkedin"></i> <a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank">LinkedIn</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa fa-cloud"></i> <a href="https://trailblazer.me/id/aaaron" target="_blank">Salesforce Trailhead</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa fa-instagram"></i> <a href="https://www.instagram.com/aaaron" target="_blank">Instagram</a></p>
+									<p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-linkedin"></i> <a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank">LinkedIn</a></p>
+                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-brands fa-salesforce"></i> <a href="https://trailblazer.me/id/aaaron" target="_blank">Salesforce Trailhead</a></p>
+                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/aaaron" target="_blank">Instagram</a></p>
                                 </div>
                             </div>
                             <!-- Contact details End -->
@@ -816,10 +805,10 @@
 	                <!-- Social Icons -->
 	                <div class="col-md-8">
 	                    <ul class="list-inline social-buttons">
-	                        <li><a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank"><i class="fa fa-linkedin wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://www.instagram.com/aaaron" target="_blank"><i class="fa fa-instagram wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://twitter.com/aaaronl" target="_blank"><i class="fa fa-twitter wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://github.com/aaaronl" target="_blank"><i class="fa fa-github wow bounceIn animated"></i></a></li>
+	                        <li><a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank"><i class="fa-solid fa-linkedin wow bounceIn animated"></i></a></li>
+	                        <li><a href="https://www.instagram.com/aaaron" target="_blank"><i class="fa-brands fa-instagram wow bounceIn animated"></i></a></li>
+	                        <li><a href="https://twitter.com/aaaronl" target="_blank"><i class="fa-brands fa-x-twitter wow bounceIn animated"></i></a></li>
+	                        <li><a href="https://github.com/aaaronl" target="_blank"><i class="fa-brands fa-github wow bounceIn animated"></i></a></li>
 	                    </ul>
 	                </div>
 	                <!-- Social Icons End -->
@@ -830,7 +819,7 @@
 	    <!-- Portfolio Modal 1 (Loan Origination System) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -838,7 +827,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Loan Origination System</h2>
@@ -846,7 +835,7 @@
 	                            <img class="img-responsive img-centered" src="img/dev/ginger.png" alt="">
 	                            <p>A custom Loan Origination system built for a mortgage lender to fulfill all of their operations processes from initial application submission through post closing. 
 		                        Utilized technologies: .Net, Classic ASP, SQL Server, jQuery and Bootstrap. A custom reporting engine was built using Crystal Reports.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -856,7 +845,7 @@
 	    <!-- Portfolio Modal 2 (Rate Sheet Publishing) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -864,7 +853,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Rate Sheet Publishing</h2>
@@ -873,7 +862,7 @@
 	                            <p>A sophisticated mortgage rate sheet publishing platform. This tool allowed raw pricing to be imported, margins applied, adjustment management and publishing of HTML and 
 		                        PDF versions of daily rate sheets. Historical pricing archives allowed easy repricing, extensions or product changes without manual intervention. Eliminated countless hours 
 		                        in daily management of numerous Excel based rate sheets.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -883,7 +872,7 @@
 	    <!-- Portfolio Modal 3 (Mortgage Trade Best Execution) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -891,7 +880,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Mortgage Trade Best Execution</h2>
@@ -899,7 +888,7 @@
 	                            <img class="img-responsive img-centered" src="img/dev/bestex.png" alt="">
 	                            <p>A mortgage trade best execution utility that imported bulk pricing bids from numerous investors and analyzed each loan for it's best pricing. Clients saw 
 		                        immediate gains of $40-50k per month in increased trade revenue and drastically streamlined the bidding process.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -909,7 +898,7 @@
 	    <!-- Portfolio Modal 4 (Photo 1) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -917,14 +906,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo1.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -934,7 +923,7 @@
 	    <!-- Portfolio Modal 5 (Photo 2) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -942,14 +931,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo2.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -959,7 +948,7 @@
 	    <!-- Portfolio Modal 6 (Photo 3) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -967,14 +956,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo3.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -984,7 +973,7 @@
 	    <!-- Portfolio Modal 7 (Photo 4) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -992,14 +981,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo4.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1009,7 +998,7 @@
 	    <!-- Portfolio Modal 8 (Photo 5) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1017,14 +1006,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo5.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1034,7 +1023,7 @@
 	    <!-- Portfolio Modal 9 (Photo 6) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1042,14 +1031,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>San Francisco, CA</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/photography/photo6.jpg" alt="">
 	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1059,7 +1048,7 @@
 	    <!-- Portfolio Modal 10 (Geometric Dream) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1067,14 +1056,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Geometric Dream</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art1.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1084,7 +1073,7 @@
 	    <!-- Portfolio Modal 11 (Tunnel Visions) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1092,14 +1081,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Tunnel Visions</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art2.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1109,7 +1098,7 @@
 	    <!-- Portfolio Modal 12 (Starscape) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1117,14 +1106,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Starscape</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art3.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1134,7 +1123,7 @@
 	    <!-- Portfolio Modal 13 (Mandala) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1142,14 +1131,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Mandala</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art4.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1159,7 +1148,7 @@
 	    <!-- Portfolio Modal 14 (Angles) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1167,14 +1156,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Angles</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art5.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1184,7 +1173,7 @@
 	    <!-- Portfolio Modal 15 (Doodling) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1192,14 +1181,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Doodling</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/art7.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1209,7 +1198,7 @@
 		<!-- Portfolio Modal 20 (Hexagon) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1217,14 +1206,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Hexagon</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/hexagon.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1234,7 +1223,7 @@
 		<!-- Portfolio Modal 21 (Compass) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1242,14 +1231,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Compass</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/compass.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1259,7 +1248,7 @@
 		<!-- Portfolio Modal 22 (Grass) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1267,14 +1256,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Grass</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/grass.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1284,7 +1273,7 @@
 		<!-- Portfolio Modal 23 (The Wheel) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1292,14 +1281,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>The Wheel</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/wheel.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1309,7 +1298,7 @@
 		<!-- Portfolio Modal 24 (Intertwined) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal24" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1317,14 +1306,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Intertwined</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/intertwined.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1334,7 +1323,7 @@
 		<!-- Portfolio Modal 25 (Insideout) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal25" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1342,14 +1331,14 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <!-- Project Details Go Here -->
 	                            <h2>Inside Out</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/art/insideout.png" alt="">
 	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1359,7 +1348,7 @@
 		<!-- Borrower Mobile App) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal26" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1367,7 +1356,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>Borrower Mobile App</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1376,7 +1365,7 @@
 									loan or customers making payments on their mortgage. The mobile app allowed borrowers 
 									track their loan status, upload documents, apply for a loan and make payments.
 								</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1386,7 +1375,7 @@
 	    <!--(Loan Officer Sales App) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal27" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1394,7 +1383,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>Loan Officer Mobile App</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1403,7 +1392,7 @@
 									This app provided critical real-time status updates, approval information 
 									and contacts. In addition an automated pricing an eligibility engine was 
 									built to price and lock loans while on the go.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1413,7 +1402,7 @@
 	    <!-- (Realtor/Builder Mobile App) -->
 	    <div class="portfolio-modal modal fade in" id="portfolioModal28" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1421,7 +1410,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>Online Loan Application</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1429,7 +1418,7 @@
 	                            <p>An web based mortgage loan application process that allowed borrowers to apply 
 	                            and track the status of thier loan application. Tasks and document uploads allowed 
 	                            borrowers to provide needed data in real-time.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1440,7 +1429,7 @@
 	    <!-- Encompass HMDA -->
 	    <div class="portfolio-modal modal fade in" id="portfolioEncompass1" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1448,7 +1437,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>HMDA Review/Audit Tracking Form</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1459,7 +1448,7 @@
 	                            for reporting purposes. HMDA data values are shown in both native and HMDA specific 
 	                            formats, allowing staff to verify the accuracy of data conversion before submission 
 	                            to regulatory agencies.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1470,7 +1459,7 @@
 	    <!-- Encompass Compliance -->
 	    <div class="portfolio-modal modal fade in" id="portfolioEncompass2" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1478,7 +1467,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>Compliance Review Tracking Form</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1487,7 +1476,7 @@
 	                            place to review and log all compliance review activites. This included disclosures, 
 	                            RegB timing, NOIs, Adverse and HMDA. Review data was aggregated to reports for management 
 	                            staff.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1498,7 +1487,7 @@
 		<!-- efolder LWC -->
 	    <div class="portfolio-modal modal fade in" id="portfolioefolderLWC" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1506,13 +1495,13 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>LWC Document Manager</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
 	                            <img class="img-responsive img-centered" src="img/dev/efolder-lwc.png" alt="">
 	                            <p>A custom Salesforce File Manager built using LWC and AWS S3. Integrated PDF document viewer via PDF.js. Features included basic file upload, download, viewing, archiving, tagging, and moving.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1523,7 +1512,7 @@
 	    <!-- Encompass Approval Discrepancy -->
 	    <div class="portfolio-modal modal fade in" id="portfolioEncompass3" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-content">
-	            <div class="close-modal" data-dismiss="modal">
+	            <div class="close-modal" data-bs-dismiss="modal">
 	                <div class="lr">
 	                    <div class="rl">
 	                    </div>
@@ -1531,7 +1520,7 @@
 	            </div>
 	            <div class="container">
 	                <div class="row">
-	                    <div class="col-lg-8 col-lg-offset-2">
+	                    <div class="col-lg-8 offset-lg-2">
 	                        <div class="modal-body">
 	                            <h2>Approval Discrepancy Tracking Form</h2>
 	                            <p class="item-intro text-muted">&nbsp;</p>
@@ -1539,7 +1528,7 @@
 	                            <p>A custom form allowing underwriting and support staff to have real-time insight 
 	                            into loan term changes after the intial or final approval. Catching these discrepancies 
 	                            early insures no delays when loans are ready for docs and funding.</p>
-	                            <button type="button" class="btn btn-x1" data-dismiss="modal"><i class="fa fa-times"></i> Close Image</button>
+	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1547,21 +1536,10 @@
 	        </div>
 	    </div>
 		
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="js/jquery.easing.1.3.js"></script>
-		<script src="js/jquery.easypiechart.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpAnimatedHeader.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<script src="js/wow.min.js"></script>
-		
-		<script>
-	    	new WOW().init();
-	    </script>
-		
-		<!-- Custom Theme JavaScript -->
-		<script src="js/app.js"></script>
+		<!-- Bootstrap 5 JavaScript Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+		<!-- Modern Vanilla JavaScript -->
+		<script src="js/app.js" type="module"></script>
 	</body>
 </html>
