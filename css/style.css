@@ -937,6 +937,8 @@ ul.social-buttons li a:active {
     right: 25px;
     width: 75px;
     height: 75px;
+    padding: 0;
+    border: none;
     background-color: transparent;
     cursor: pointer;
     transition: opacity var(--transition-fast);
