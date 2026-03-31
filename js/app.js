@@ -1,161 +1,248 @@
 /**
- * Modern Vanilla JavaScript for Aaron Lawrence Portfolio
- * Replaces jQuery and legacy plugins with native ES6+ APIs
+ * Aaron Lawrence Portfolio - Modern Vanilla JavaScript
+ * ES6+ with no dependencies
  */
 
-// Wait for DOM to be ready
 document.addEventListener('DOMContentLoaded', () => {
-	initPreloader();
+	initNavigation();
 	initSmoothScroll();
-	initAnimatedHeader();
+	initPortfolioFilters();
+	initLightbox();
 	initScrollAnimations();
-	initMobileNavClose();
+	initNavbarScroll();
 });
 
 /**
- * Preloader - Fade out the loading screen
+ * Mobile Navigation Toggle
  */
-function initPreloader() {
-	const loader = document.getElementById('loader');
-	const loaderInner = document.getElementById('loaderInner');
+function initNavigation() {
+	const navToggle = document.querySelector('.nav-toggle');
+	const navMenu = document.querySelector('.nav-menu');
 
-	if (loaderInner) {
-		loaderInner.style.transition = 'opacity 0.3s ease';
-		loaderInner.style.opacity = '0';
-	}
+	if (!navToggle || !navMenu) return;
 
-	if (loader) {
-		setTimeout(() => {
-			loader.style.transition = 'opacity 0.5s ease';
-			loader.style.opacity = '0';
-			setTimeout(() => {
-				loader.style.display = 'none';
-			}, 500);
-		}, 800);
-	}
+	navToggle.addEventListener('click', () => {
+		const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+		navToggle.setAttribute('aria-expanded', !isExpanded);
+		navMenu.classList.toggle('open');
+	});
+
+	// Close menu when clicking a link
+	const navLinks = navMenu.querySelectorAll('.nav-link');
+	navLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			navToggle.setAttribute('aria-expanded', 'false');
+			navMenu.classList.remove('open');
+		});
+	});
+
+	// Close menu when clicking outside
+	document.addEventListener('click', (e) => {
+		if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+			navToggle.setAttribute('aria-expanded', 'false');
+			navMenu.classList.remove('open');
+		}
+	});
 }
 
 /**
- * Smooth Scroll - Native smooth scrolling for navigation links
+ * Smooth Scroll for Navigation Links
  */
 function initSmoothScroll() {
-	const scrollLinks = document.querySelectorAll('a.page-scroll');
+	const links = document.querySelectorAll('a[href^="#"]');
 
-	scrollLinks.forEach(link => {
+	links.forEach(link => {
 		link.addEventListener('click', (e) => {
-			e.preventDefault();
 			const targetId = link.getAttribute('href');
+			if (targetId === '#') return;
+
 			const targetElement = document.querySelector(targetId);
+			if (!targetElement) return;
 
-			if (targetElement) {
-				const navbarHeight = 70;
-				const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+			e.preventDefault();
 
-				window.scrollTo({
-					top: targetPosition,
-					behavior: 'smooth'
-				});
-			}
+			const navHeight = 70;
+			const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+			window.scrollTo({
+				top: targetPosition,
+				behavior: 'smooth'
+			});
 		});
 	});
 }
 
 /**
- * Animated Header - Shrink navbar on scroll
+ * Portfolio Filter Functionality
  */
-function initAnimatedHeader() {
-	const navbar = document.querySelector('.navbar-default');
-	const changeHeaderOn = 200;
+function initPortfolioFilters() {
+	const filterButtons = document.querySelectorAll('.filter-btn');
+	const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+	if (!filterButtons.length || !portfolioItems.length) return;
+
+	filterButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			// Update active button
+			filterButtons.forEach(btn => btn.classList.remove('active'));
+			button.classList.add('active');
+
+			// Filter items
+			const filter = button.dataset.filter;
+
+			portfolioItems.forEach(item => {
+				if (filter === 'all' || item.dataset.category === filter) {
+					item.classList.remove('hidden');
+					item.style.animation = 'fadeIn 0.4s ease forwards';
+				} else {
+					item.classList.add('hidden');
+				}
+			});
+		});
+	});
+
+	// Add fade-in animation
+	const style = document.createElement('style');
+	style.textContent = `
+		@keyframes fadeIn {
+			from { opacity: 0; transform: scale(0.95); }
+			to { opacity: 1; transform: scale(1); }
+		}
+	`;
+	document.head.appendChild(style);
+}
+
+/**
+ * Lightbox for Portfolio Images
+ */
+function initLightbox() {
+	const lightbox = document.getElementById('lightbox');
+	const lightboxImage = lightbox?.querySelector('.lightbox-image');
+	const lightboxCaption = lightbox?.querySelector('.lightbox-caption');
+	const lightboxClose = lightbox?.querySelector('.lightbox-close');
+	const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+	if (!lightbox || !portfolioItems.length) return;
+
+	// Open lightbox
+	portfolioItems.forEach(item => {
+		item.addEventListener('click', () => {
+			const img = item.querySelector('img');
+			const title = item.querySelector('h3')?.textContent || '';
+
+			if (img) {
+				lightboxImage.src = img.src;
+				lightboxImage.alt = img.alt;
+				lightboxCaption.textContent = title;
+				lightbox.classList.add('active');
+				lightbox.setAttribute('aria-hidden', 'false');
+				document.body.style.overflow = 'hidden';
+			}
+		});
+	});
+
+	// Close lightbox
+	const closeLightbox = () => {
+		lightbox.classList.remove('active');
+		lightbox.setAttribute('aria-hidden', 'true');
+		document.body.style.overflow = '';
+	};
+
+	lightboxClose?.addEventListener('click', closeLightbox);
+
+	lightbox.addEventListener('click', (e) => {
+		if (e.target === lightbox) {
+			closeLightbox();
+		}
+	});
+
+	// Close on escape key
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+			closeLightbox();
+		}
+	});
+}
+
+/**
+ * Scroll Animations using Intersection Observer
+ */
+function initScrollAnimations() {
+	const animatedElements = document.querySelectorAll('.section-title, .section-subtitle, .about-content, .portfolio-grid, .timeline-item, .contact-grid');
+
+	if (!animatedElements.length) return;
+
+	// Add animation class
+	animatedElements.forEach(el => {
+		el.classList.add('animate-on-scroll');
+	});
+
+	const observerOptions = {
+		root: null,
+		rootMargin: '0px 0px -50px 0px',
+		threshold: 0.1
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('visible');
+				observer.unobserve(entry.target);
+			}
+		});
+	}, observerOptions);
+
+	animatedElements.forEach(el => observer.observe(el));
+}
+
+/**
+ * Navbar Scroll Effect
+ */
+function initNavbarScroll() {
+	const nav = document.querySelector('.nav');
+	const navLinks = document.querySelectorAll('.nav-link');
+	const sections = document.querySelectorAll('section[id]');
+
+	if (!nav) return;
+
 	let ticking = false;
 
-	if (!navbar) return;
+	const updateNav = () => {
+		const scrollY = window.pageYOffset;
 
-	const updateHeader = () => {
-		const scrollY = window.pageYOffset || document.documentElement.scrollTop;
-
-		if (scrollY >= changeHeaderOn) {
-			navbar.classList.add('navbar-shrink');
+		// Add scrolled class
+		if (scrollY > 50) {
+			nav.classList.add('scrolled');
 		} else {
-			navbar.classList.remove('navbar-shrink');
+			nav.classList.remove('scrolled');
 		}
+
+		// Update active link based on scroll position
+		sections.forEach(section => {
+			const sectionTop = section.offsetTop - 100;
+			const sectionBottom = sectionTop + section.offsetHeight;
+
+			if (scrollY >= sectionTop && scrollY < sectionBottom) {
+				const currentId = section.getAttribute('id');
+				navLinks.forEach(link => {
+					link.classList.remove('active');
+					if (link.getAttribute('href') === `#${currentId}`) {
+						link.classList.add('active');
+					}
+				});
+			}
+		});
+
 		ticking = false;
 	};
 
 	window.addEventListener('scroll', () => {
 		if (!ticking) {
-			window.requestAnimationFrame(updateHeader);
+			window.requestAnimationFrame(updateNav);
 			ticking = true;
 		}
 	}, { passive: true });
 
 	// Initial check
-	updateHeader();
-}
-
-/**
- * Scroll Animations - Using Intersection Observer instead of WOW.js
- */
-function initScrollAnimations() {
-	const animatedElements = document.querySelectorAll('.wow');
-
-	if (!animatedElements.length) return;
-
-	const observerOptions = {
-		root: null,
-		rootMargin: '0px',
-		threshold: 0.1
-	};
-
-	const animationObserver = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				const element = entry.target;
-
-				// Get animation classes
-				const animationClasses = [];
-				element.classList.forEach(cls => {
-					if (cls.startsWith('fade') || cls.startsWith('zoom') ||
-					    cls.startsWith('bounce') || cls.startsWith('slide')) {
-						animationClasses.push(cls);
-					}
-				});
-
-				// Add animated class to trigger CSS animation
-				element.classList.add('animated');
-				element.style.visibility = 'visible';
-
-				// Unobserve after animation is triggered
-				animationObserver.unobserve(element);
-			}
-		});
-	}, observerOptions);
-
-	// Set initial state and observe
-	animatedElements.forEach(element => {
-		element.style.visibility = 'hidden';
-		animationObserver.observe(element);
-	});
-}
-
-/**
- * Mobile Navigation - Close menu when a link is clicked
- */
-function initMobileNavClose() {
-	const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
-	const navbarCollapse = document.getElementById('mainNavbar');
-
-	if (!navbarCollapse) return;
-
-	navLinks.forEach(link => {
-		link.addEventListener('click', () => {
-			// Check if navbar is expanded (mobile view)
-			if (navbarCollapse.classList.contains('show')) {
-				// Use Bootstrap 5's collapse API
-				const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-				if (bsCollapse) {
-					bsCollapse.hide();
-				}
-			}
-		});
-	});
+	updateNav();
 }
