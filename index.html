@@ -1,1442 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Aaron Lawrence Product Design and Development">
-		<meta name="author" content="Aaron Lawrence">
-		<title>Aaron Lawrence - Online Resume and Portfolio</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aaron Lawrence - Senior Technology & Product Leader">
+	<meta name="author" content="Aaron Lawrence">
+	<title>Aaron Lawrence - Technology & Product Leader</title>
 
-		<!-- CSS -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/animate.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vehovbd2ZPUCDCxXNIaYzKPY8PREFSCbYT4FTfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	</head>
-	<body id="page-top" class="index">
-		
-		<!-- Preloader -->
-		<div id="loader">
-		  <div id="loaderInner">	  	
-				<div class="loaderBars">
-					<span class="bar1 bar"></span>
-					<span class="bar2 bar"></span>
-					<span class="bar3 bar"></span>
-				</div>	
-		  </div>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="nav" id="nav">
+		<div class="nav-container">
+			<a href="#" class="nav-logo">AL</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-menu">
+				<li><a href="#about" class="nav-link">About</a></li>
+				<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+				<li><a href="#experience" class="nav-link">Experience</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
 		</div>
-		
-		<!-- Navigation -->
-	    <nav class="navbar navbar-expand-md navbar-default fixed-top" aria-label="Main navigation">
-	        <div class="container">
-	            <div class="navbar-header page-scroll">
-	                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-	                    <span class="navbar-toggler-icon"></span>
-	                </button>
-	                <!-- <a class="navbar-brand page-scroll" href="#page-top">Aaron Lawrence</a> -->
-	            </div>
-	
-	            <!-- navbar-collapse -->
-	            <div class="collapse navbar-collapse" id="mainNavbar">
-	                <ul class="navbar-nav ms-auto">
-	                    	                    <li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
-	                    <li class="nav-item"><a class="nav-link page-scroll" href="#portfolio">Portfolio</a></li>
-						<li class="nav-item"><a class="nav-link page-scroll" href="#resume">Resume</a></li>
-	                    <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
-	                </ul>
-	            </div>
-	            <!-- navbar-collapse End -->
-	
-	        </div>
-	    </nav>
-		
-		<!-- Header -->
-	    <header>
-	        <div class="container">
-	            <div class="intro-text wow fadeInDown animated">
-	                <!-- <div class="intro-lead-in">Welcome To My Site!</div> -->
-	                <div class="intro-heading">Hi, I’m Aaron Lawrence</div>
-	                <a href="#about" class="page-scroll btn btn-x2">More About Me</a>
-	            </div>
-	        </div>
-	    </header>
-	    
-	    <!-- About Section -->
-	    <section id="about">
-	        <div class="container">
-	            <div class="row">
-					<div class="col-lg-12 text-center wow fadeInDown animated">
-	                    <h2 class="section-heading">About me</h2>
-	                </div>
-	                <div class="col-lg-4 text-center col-md-4 col-sm-4 col-12 float-end media wow zoomIn animated">
-	                    <img alt="Aaron Lawrence profile photo" class="img-circle img-me rounded-circle" src="img/me.jpg">
-	                </div>
-	                <div class="col-lg-7 col-md-7 col-sm-7 col-12 float-start media">
-	                    <h3>Aaron Lawrence</h3>
-	                    <p class="text-muted">Hi, I am a hands-on technology leader with 20 years of experience creating solutions for the mortgage industry. 
-							In addition, I have an extensive background in software development, information security, and IT governance.</p>
+	</nav>
 
-						<p class="text-muted">I am comfortable giving presentations, developing technology strategies, writing code, managing complex projects, 
-							or hashing out the intricate details of mortgage compliance. I deeply understand the mortgage industry, which has given me the knowledge 
-							to craft solutions that bring success to the companies I have worked for.</p>
-	                    <p><a class="btn btn-primary btn-lg wow bounce animated" role="button" href="Aaron Lawrence - Resume.pdf" target="_blank">Download Printable Resume</a></p>
-	                </div>
+	<!-- Hero Section -->
+	<header class="hero" id="hero">
+		<div class="hero-content">
+			<p class="hero-greeting">Hello, I'm</p>
+			<h1 class="hero-title">Aaron Lawrence</h1>
+			<p class="hero-subtitle">Senior Technology & Product Leader</p>
+			<a href="#about" class="btn btn-primary">Learn More</a>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section class="section" id="about">
+		<div class="container">
+			<h2 class="section-title">About Me</h2>
+			<div class="about-content">
+				<div class="about-image">
+					<img src="img/me.jpg" alt="Aaron Lawrence" loading="lazy">
 				</div>
-	
-	        </div>
-	    </section>
-	    
-	    <!-- Seperator -->
-	    <section id="status" class="counter">
-	        <div class="container">
-	            <div class="row text-center">
-
-	            </div>
-	        </div>
-	    </section>
-	    
-	    <!-- Portfolio Section -->
-	    <section id="portfolio">
-	        <div class="container">
-		        <!-- Portfolio -->
-	            <div class="row">
-	                <div class="col-lg-12 text-center wow fadeInDown animated animated" style="visibility: visible; animation: fadeInDown; -webkit-animation: fadeInDown;">
-	                    <h2 class="section-heading">Portfolio</h2>
-	                    <h3 class="section-subheading text-muted">Below is a sample of my development projects, photography and artwork.</h3>
-	                </div>
-	            </div>
-	            <div class="row">
-	            
-					<!-- Development -->
-
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioefolderLWC" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/efolder-lwc-sm.png" class="img-responsive" alt="" width="400" height="300">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>LWC Document Manager</h4>
-	                        <p class="text-muted">Salesforce Development</p>
-	                    </div>
+				<div class="about-text">
+					<p class="about-lead">Senior technology and product leader with 20+ years in financial services, combining deep product leadership with enterprise program management and hands-on operational oversight.</p>
+					<p>Proven track record driving large-scale digital transformation and integrating AI and automation across the mortgage lifecycle — from loan origination and underwriting to servicing, compliance, and customer engagement.</p>
+					<p>Experienced managing simultaneous multi-million dollar initiatives, modernizing infrastructure to power AI-driven innovation, and embedding intelligent workflows into everyday business operations.</p>
+					<p>Thrives at the intersection of product innovation, technology strategy, cross-functional execution, and strategic planning in mission-driven organizations.</p>
+					<div class="about-cta">
+						<a href="Aaron Lawrence - Resume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
 					</div>
-					
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal28" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/bolt-app-sm.jpg" class="img-responsive" alt="" width="400" height="300">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Online Loan Application</h4>
-	                        <p class="text-muted">Web Development</p>
-	                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section class="section section-alt" id="portfolio">
+		<div class="container">
+			<h2 class="section-title">Portfolio</h2>
+			<p class="section-subtitle">A collection of my photography and digital artwork</p>
+
+			<!-- Filter Tabs -->
+			<div class="portfolio-filters">
+				<button class="filter-btn active" data-filter="all">All</button>
+				<button class="filter-btn" data-filter="art">Digital Art</button>
+				<button class="filter-btn" data-filter="photo">Photography</button>
+			</div>
+
+			<!-- Portfolio Grid -->
+			<div class="portfolio-grid">
+				<!-- Digital Art -->
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/wheel.png" alt="The Wheel - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>The Wheel</h3>
+						<p>Hand Drawn Digital Art</p>
 					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal26" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/caliber-mobile-sm.jpg" class="img-responsive" alt="" width="400" height="300">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Borrower Mobile App</h4>
-	                        <p class="text-muted">Mobile Development</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal27" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/h20-mobile-sm.jpg" class="img-responsive" alt="" width="400" height="300">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Loan Officer Mobile App</h4>
-	                        <p class="text-muted">Mobile Development</p>
-	                    </div>
-	                </div>
-	               	<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal1" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/ginger-sm.png" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Loan Origination System</h4>
-	                        <p class="text-muted">Web Development</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal2" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/rates-sm.png" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Rate Sheet Publishing</h4>
-	                        <p class="text-muted">Web Development</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal3" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/bestex-sm.png" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Trade Best-Ex Modeling</h4>
-	                        <p class="text-muted">Web Development</p>
-	                    </div>
-	                </div>
-	                
-	                <!-- Encompass -->
-	                
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass1" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/enc-hmda-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>HMDA Review Form</h4>
-	                        <p class="text-muted">Encompass Development</p>
-	                    </div>
-	                </div>
-	                
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass2" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/enc-compliance-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Compliance Review Form</h4>
-	                        <p class="text-muted">Encompass Development</p>
-	                    </div>
-	                </div>
-	                
-	                <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioEncompass3" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/dev/enc-discrepancy-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Approval Discrepancy</h4>
-	                        <p class="text-muted">Encompass Development</p>
-	                    </div>
-	                </div> -->
-	                
-	                <!-- Photography -->
-	                
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal4" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo1-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal5" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo2-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal6" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo3-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal7" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo4-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal8" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo5-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal9" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/photography/photo6-sm.jpg" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>San Francisco, CA</h4>
-	                        <p class="text-muted">Photography</p>
-	                    </div>
-	                </div>
-	                
-					<!-- Artwork -->
-					
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal23" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/wheel.png" class="img-responsive" alt="" width="360">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>The Wheel</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
-	                </div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal24" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/intertwined.png" class="img-responsive" alt="" width="360">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Intertwined</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
+				</article>
+
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/intertwined.png" alt="Intertwined - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>Intertwined</h3>
+						<p>Hand Drawn Digital Art</p>
 					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal25" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/insideout.png" class="img-responsive" alt="" width="360">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Inside Out</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
-	                </div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal20" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/hexagon.png" class="img-responsive" alt="" width="360">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Hexagon</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal11" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/art2-sm.png" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Tunnel Visions</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
-	                </div>
-	                <div class="col-md-4 col-sm-6 portfolio-item">
-	                    <a href="#portfolioModal15" class="portfolio-link" data-bs-toggle="modal" role="button">
-	                        <div class="portfolio-hover">
-	                            <div class="portfolio-hover-content">
-	                                <i class="fa-solid fa-magnifying-glass-plus fa-3x"></i>
-	                            </div>
-	                        </div>
-	                        <img src="img/art/art7-sm.png" class="img-responsive" alt="">
-	                    </a>
-	                    <div class="portfolio-caption">
-	                        <h4>Doodling</h4>
-	                        <p class="text-muted">Hand Drawn Digital Art</p>
-	                    </div>
-	                </div>
-	                <!-- End Artwork -->
-	            </div>            
-	        </div>
-	    </section>
-	    
-	    <!-- Divider -->
-	    <aside class="clients bg-clients">
-	        <div class="container">&nbsp;</div>
-	    </aside>
-	    
-	    <!-- Resume Section -->
-	    <section id="resume">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-12 text-center wow fadeInDown animated">
-	                    <h2 class="section-heading">Resume</h2>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-12">
-	                    <ul class="timeline">
-	
-	                    <!-- exprience -->
-	                        <li class="timeline-inverted">
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <span class="ico">
-	                                    <i class="fa-solid fa-briefcase"></i>
-	                                </span>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInRight animated">
-	                                <div class="timeline-heading">
-	                                    <h2 class="subheading">Work Experience</h2>
-	                                </div>
-	                                
-	                            </div>
-	                        </li>
-							<li class="timeline-inverted">
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2022
-	                                    <br>-
-	                                    <br>Present
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInRight animated">
-	                                <div class="timeline-heading">
-	                                    <h4>Movement Mortgage</h4>
-	                                    <h4 class="subheading">Technology</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">&nbsp;</p>
-	                                </div>
-	                            </div>
-	                        </li>
-							<li>
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2020
-	                                    <br>-
-	                                    <br>2022
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInLeft animated">
-	                                <div class="timeline-heading">
-	                                    <h4>Level Capital</h4>
-	                                    <h4 class="subheading">Senior Software Engineer</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">Managed a team of software developers and data engineers building Level's custom lending platform in Salesforce. 
-											Implemented SDLC and information security policies and procedures, assisting Level in obtaining SOC 1 certification. Architected a 
-											custom document management tool using Salesforce LWC and AWS technologies, eliminating dependencies on 3rd party vendors.</p>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <li class="timeline-inverted">
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2016
-	                                    <br>-
-	                                    <br>2019
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInRight animated">
-	                                <div class="timeline-heading">
-	                                    <h4>Caliber Home Loans</h4>
-	                                    <h4 class="subheading">VP Technology Strategy</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">Collaborated with origination teams to define technology goals and priorities. Guided development teams on project 
-											deliverables. Helped launch three unique mobile apps across two platforms in my first year. Rebuilt their online application portal, 
-											significantly streamlining the loan application process.</p>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <li>
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2009
-	                                    <br>-
-	                                    <br>2016
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInLeft animated">
-	                                <div class="timeline-heading">
-	                                    <h4>First Priority Financial, Inc.</h4>
-	                                    <h4 class="subheading">CTO / Senior Software Engineer</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">Managed the technology team covering network engineering, development, support, and information security. 
-											Worked hands-on in developing FPF's custom LOS and mortgage banking platforms. Migrated all employees to the Encompass 
-											platform and converted all operations from paper to electronic loan files, significantly reducing overhead and costs.</p>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <li class="timeline-inverted">
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2002
-	                                    <br>-
-	                                    <br>2009
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInRight animated">
-	                                <div class="timeline-heading">
-	                                    <h4>SquaredBits</h4>
-	                                    <h4 class="subheading">CEO / Software Engineer</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">Provided custom application development, web design, project planning and business analysis/strategy for a variety of mortgage banking clients.</p>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <!-- exprience End -->
-	
-	                        <!-- education -->
-	                        <li class="timeline-inverted">
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <span class="ico">
-	                                    <i class="fa-solid fa-graduation-cap"></i>
-	                                </span>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInRight animated">
-	                                <div class="timeline-heading">
-	                                    <h2 class="subheading">Education</h2>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <li>
-	                            <div class="timeline-image wow zoomIn animated">
-	                                <h4>2003
-	                                    <br>-
-	                                    <br>2005
-	                                </h4>
-	                            </div>
-	                            <div class="timeline-panel wow fadeInLeft animated">
-	                                <div class="timeline-heading">
-	                                    <h4>Santa Rosa Jr. College</h4>
-	                                    <h4 class="subheading">Web Development</h4>
-	                                </div>
-	                                <div class="timeline-body">
-	                                    <p class="text-muted">Studied graphic design, web development and database administration</p>
-	                                </div>
-	                            </div>
-	                        </li>
-	                        <!-- education End -->
-	                    </ul>
-	                </div>
-	                <p>&nbsp;</p>
-	                <p class="text-center">
-	                	<a class="btn btn-primary btn-lg wow bounce animated" role="button" href="Aaron Lawrence - Resume.pdf" target="_blank">Download Printable Resume</a>
-	                </p>
-	            </div>
-	        </div>
-	    </section>
-	    
-	    <!-- Divider -->
-	    <aside class="clients bg-clients">
-	        <div class="container">&nbsp;</div>
-		</aside>
+				</article>
 
-	    <!-- Contact section -->
-	    <section id="contact">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-12 text-center wow fadeInDown">
-	                    <h2 class="section-heading">Get In Touch</h2>
-	                    <p>&nbsp;</p>
-	                </div>
-	            </div>
-	            <div class="row">
-	                <div class="col-lg-12">
-                        <div class="row">
-                            <!-- Contact details -->
-							<p class="ex-large text-white">I would love to speak to you about your next project or other business opportunities.</p>
-                            <div class="col-md-6">
-                                <div class="form-text wow fadeIn animated">
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-regular fa-envelope"></i> <a href="mailto:itsaaaron@gmail.com">its@aaaron.io</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-link"></i> <a href="http://aaaron.io">aaaron.io</a></p>
-									<p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-location-dot"></i> PO Box 742 Kenwood, CA 95452</p>
-                                </div>
-                            </div>
-							<div class="col-md-6">
-                                <div class="form-text wow fadeIn animated">
-									<p class="wow fadeInUp animated ex-large"> <i class="fa-solid fa-linkedin"></i> <a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank">LinkedIn</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-brands fa-salesforce"></i> <a href="https://trailblazer.me/id/aaaron" target="_blank">Salesforce Trailhead</a></p>
-                                    <p class="wow fadeInUp animated ex-large"> <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/aaaron" target="_blank">Instagram</a></p>
-                                </div>
-                            </div>
-                            <!-- Contact details End -->
-                            <div class="clearfix"></div>
-                        </div>
-	                </div>
-	            </div>
-	        </div>
-	    </section>
-	    
-	    <footer>
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-md-4">
-	                    <span class="copyright">Copyright &copy; 2022 | Aaron Lawrence</span>
-	                </div>
-	                <!-- Social Icons -->
-	                <div class="col-md-8">
-	                    <ul class="list-inline social-buttons">
-	                        <li><a href="http://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank"><i class="fa-solid fa-linkedin wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://www.instagram.com/aaaron" target="_blank"><i class="fa-brands fa-instagram wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://twitter.com/aaaronl" target="_blank"><i class="fa-brands fa-x-twitter wow bounceIn animated"></i></a></li>
-	                        <li><a href="https://github.com/aaaronl" target="_blank"><i class="fa-brands fa-github wow bounceIn animated"></i></a></li>
-	                    </ul>
-	                </div>
-	                <!-- Social Icons End -->
-	            </div>
-	        </div>
-	    </footer>
-		
-	    <!-- Portfolio Modal 1 (Loan Origination System) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Loan Origination System</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/ginger.png" alt="">
-	                            <p>A custom Loan Origination system built for a mortgage lender to fulfill all of their operations processes from initial application submission through post closing. 
-		                        Utilized technologies: .Net, Classic ASP, SQL Server, jQuery and Bootstrap. A custom reporting engine was built using Crystal Reports.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 2 (Rate Sheet Publishing) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Rate Sheet Publishing</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/rates.png" alt="">
-	                            <p>A sophisticated mortgage rate sheet publishing platform. This tool allowed raw pricing to be imported, margins applied, adjustment management and publishing of HTML and 
-		                        PDF versions of daily rate sheets. Historical pricing archives allowed easy repricing, extensions or product changes without manual intervention. Eliminated countless hours 
-		                        in daily management of numerous Excel based rate sheets.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 3 (Mortgage Trade Best Execution) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Mortgage Trade Best Execution</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/bestex.png" alt="">
-	                            <p>A mortgage trade best execution utility that imported bulk pricing bids from numerous investors and analyzed each loan for it's best pricing. Clients saw 
-		                        immediate gains of $40-50k per month in increased trade revenue and drastically streamlined the bidding process.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 4 (Photo 1) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo1.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 5 (Photo 2) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo2.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 6 (Photo 3) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo3.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 7 (Photo 4) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo4.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 8 (Photo 5) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo5.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 9 (Photo 6) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>San Francisco, CA</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/photography/photo6.jpg" alt="">
-	                            <p>iPhone Photography</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 10 (Geometric Dream) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Geometric Dream</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art1.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 11 (Tunnel Visions) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Tunnel Visions</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art2.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 12 (Starscape) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Starscape</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art3.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 13 (Mandala) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Mandala</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art4.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 14 (Angles) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Angles</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art5.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-	    <!-- Portfolio Modal 15 (Doodling) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Doodling</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/art7.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-		<!-- Portfolio Modal 20 (Hexagon) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Hexagon</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/hexagon.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/insideout.png" alt="Inside Out - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>Inside Out</h3>
+						<p>Hand Drawn Digital Art</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/hexagon.png" alt="Hexagon - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>Hexagon</h3>
+						<p>Hand Drawn Digital Art</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/art2.png" alt="Tunnel Visions - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>Tunnel Visions</h3>
+						<p>Hand Drawn Digital Art</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="art">
+					<img src="img/art/art7.png" alt="Doodling - Hand drawn digital art" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>Doodling</h3>
+						<p>Hand Drawn Digital Art</p>
+					</div>
+				</article>
+
+				<!-- Photography -->
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo1.jpg" alt="San Francisco cityscape" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo2.jpg" alt="San Francisco architecture" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo3.jpg" alt="San Francisco street view" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo4.jpg" alt="San Francisco urban landscape" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo5.jpg" alt="San Francisco scenic view" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+
+				<article class="portfolio-item" data-category="photo">
+					<img src="img/photography/photo6.jpg" alt="San Francisco downtown" loading="lazy">
+					<div class="portfolio-overlay">
+						<h3>San Francisco</h3>
+						<p>Photography</p>
+					</div>
+				</article>
+			</div>
 		</div>
-		<!-- Portfolio Modal 21 (Compass) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Compass</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/compass.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	</section>
+
+	<!-- Experience Section -->
+	<section class="section" id="experience">
+		<div class="container">
+			<h2 class="section-title">Experience</h2>
+			<p class="section-subtitle">20+ years driving digital transformation in financial services</p>
+
+			<div class="timeline">
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>SVP, Engineering & Infrastructure</h3>
+							<span class="timeline-company">Movement Mortgage</span>
+							<span class="timeline-date">Oct 2022 - Present</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Directed multiple large-scale transformation projects simultaneously, including a full LOS migration, enterprise CRM build, and data platform overhaul</li>
+							<li>Built and scaled a 100+ person organization from scratch across engineering, data, support, and infrastructure</li>
+							<li>Delivered a custom Salesforce CRM platform serving 2,500+ users integrated with the core LOS</li>
+							<li>Executed high-stakes LOS migration from Fiserv to BlueSage, supporting $20B+ in funded loans</li>
+							<li>Modernized data infrastructure from SQL Server to Databricks data lake</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>Lead Software Engineer</h3>
+							<span class="timeline-company">Level Capital, LLC</span>
+							<span class="timeline-date">Dec 2020 - Oct 2022</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Led product and engineering for Salesforce-based construction lending platform</li>
+							<li>Managed full project lifecycle from requirements through deployment across multiple concurrent workstreams</li>
+							<li>Enhanced investor marketplace for real estate development projects</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>VP, Product Management</h3>
+							<span class="timeline-company">Caliber Home Loans, Inc.</span>
+							<span class="timeline-date">Nov 2016 - May 2019</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Owned product strategy and roadmap for origination technology including proprietary LOS, custom POS, and mobile apps</li>
+							<li>Delivered 6 mobile apps (3 products, iOS and Android) within a single year</li>
+							<li>Redesigned digital POS experience with integrated income and asset verification</li>
+						</ul>
+					</div>
+				</article>
+
+				<article class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>Chief Technology Officer</h3>
+							<span class="timeline-company">First Priority Financial, Inc.</span>
+							<span class="timeline-date">Jan 2009 - Oct 2016</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Technology executive for $2-3B/year mortgage lender with 1,500+ staff</li>
+							<li>Oversaw all technology, facilities infrastructure, and project delivery</li>
+							<li>Built enterprise systems from ground up including proprietary LOS and core banking integrations</li>
+							<li>Established technology governance, disaster recovery, and incident response procedures</li>
+						</ul>
+					</div>
+				</article>
+			</div>
 		</div>
-		<!-- Portfolio Modal 22 (Grass) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Grass</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/grass.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="section section-dark" id="contact">
+		<div class="container">
+			<h2 class="section-title">Get In Touch</h2>
+			<p class="section-subtitle">I'd love to hear about your next project or opportunity</p>
+
+			<div class="contact-grid">
+				<a href="mailto:its@aaaron.io" class="contact-card">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+					</div>
+					<h3>Email</h3>
+					<p>its@aaaron.io</p>
+				</a>
+
+				<a href="https://linkedin.com/in/aaron-lawrence-3297571a2" target="_blank" rel="noopener" class="contact-card">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+					</div>
+					<h3>LinkedIn</h3>
+					<p>Connect with me</p>
+				</a>
+
+				<div class="contact-card">
+					<div class="contact-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+					</div>
+					<h3>Location</h3>
+					<p>Santa Rosa, CA</p>
+				</div>
+			</div>
 		</div>
-		<!-- Portfolio Modal 23 (The Wheel) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal23" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>The Wheel</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/wheel.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2025 Aaron Lawrence. All rights reserved.</p>
 		</div>
-		<!-- Portfolio Modal 24 (Intertwined) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal24" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Intertwined</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/intertwined.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-		</div>
-		<!-- Portfolio Modal 25 (Insideout) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal25" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <!-- Project Details Go Here -->
-	                            <h2>Inside Out</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/art/insideout.png" alt="">
-	                            <p>Hand Drawn Line Art using Procreate</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-		</div>
-		<!-- Borrower Mobile App) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal26" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>Borrower Mobile App</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/caliber-mobile.jpg" alt="">
-	                            <p>A native iOS and Android mobile app supporting borrower's seeking to obtain a mortgage 
-									loan or customers making payments on their mortgage. The mobile app allowed borrowers 
-									track their loan status, upload documents, apply for a loan and make payments.
-								</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    <!--(Loan Officer Sales App) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal27" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>Loan Officer Mobile App</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/h20-mobile.jpg" alt="">
-	                            <p>A native iOS and Android mobile app supporting Loan Officers in the field. 
-									This app provided critical real-time status updates, approval information 
-									and contacts. In addition an automated pricing an eligibility engine was 
-									built to price and lock loans while on the go.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-	    <!-- (Realtor/Builder Mobile App) -->
-	    <div class="portfolio-modal modal fade" id="portfolioModal28" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>Online Loan Application</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/bolt-app.jpg" alt="">
-	                            <p>An web based mortgage loan application process that allowed borrowers to apply 
-	                            and track the status of thier loan application. Tasks and document uploads allowed 
-	                            borrowers to provide needed data in real-time.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
+	</footer>
 
-	    <!-- Encompass HMDA -->
-	    <div class="portfolio-modal modal fade" id="portfolioEncompass1" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>HMDA Review/Audit Tracking Form</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/enc-hmda.jpg" alt="">
-	                            <p>A custom Encompass form that allows compliance staff to review and audit all 
-	                            aspects of HMDA data. All necessary data is in one place, saving valuable time 
-	                            during audits. Each data elenment that is reviewed gets logged along with notes 
-	                            for reporting purposes. HMDA data values are shown in both native and HMDA specific 
-	                            formats, allowing staff to verify the accuracy of data conversion before submission 
-	                            to regulatory agencies.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
+	<!-- Lightbox Modal -->
+	<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+		<button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+		<img class="lightbox-image" src="" alt="">
+		<div class="lightbox-caption"></div>
+	</div>
 
-	    <!-- Encompass Compliance -->
-	    <div class="portfolio-modal modal fade" id="portfolioEncompass2" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>Compliance Review Tracking Form</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/enc-compliance.jpg" alt="">
-	                            <p>A custom compliance review tracking form that gave compliance staff a central 
-	                            place to review and log all compliance review activites. This included disclosures, 
-	                            RegB timing, NOIs, Adverse and HMDA. Review data was aggregated to reports for management 
-	                            staff.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-
-		<!-- efolder LWC -->
-	    <div class="portfolio-modal modal fade" id="portfolioefolderLWC" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>LWC Document Manager</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/efolder-lwc.png" alt="">
-	                            <p>A custom Salesforce File Manager built using LWC and AWS S3. Integrated PDF document viewer via PDF.js. Features included basic file upload, download, viewing, archiving, tagging, and moving.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-
-	    <!-- Encompass Approval Discrepancy -->
-	    <div class="portfolio-modal modal fade" id="portfolioEncompass3" tabindex="-1" role="dialog" aria-hidden="true">
-	        <div class="modal-dialog modal-fullscreen">
-	        <div class="modal-content">
-	            <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
-	                <div class="lr">
-	                    <div class="rl">
-	                    </div>
-	                </div>
-	            </button>
-	            <div class="container">
-	                <div class="row">
-	                    <div class="col-lg-8 offset-lg-2">
-	                        <div class="modal-body">
-	                            <h2>Approval Discrepancy Tracking Form</h2>
-	                            <p class="item-intro text-muted">&nbsp;</p>
-	                            <img class="img-responsive img-centered" src="img/dev/enc-discrepancy.jpg" alt="">
-	                            <p>A custom form allowing underwriting and support staff to have real-time insight 
-	                            into loan term changes after the intial or final approval. Catching these discrepancies 
-	                            early insures no delays when loans are ready for docs and funding.</p>
-	                            <button type="button" class="btn btn-x1" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Close Image</button>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        </div>
-	    </div>
-
-		<!-- Bootstrap 5 JavaScript Bundle -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-		<!-- Modern Vanilla JavaScript -->
-		<script src="js/app.js" type="module"></script>
-	</body>
+	<script src="js/app.js"></script>
+</body>
 </html>
