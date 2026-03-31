@@ -620,9 +620,9 @@ button {
    ======================================== */
 .contact-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: var(--spacing-xl);
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -786,8 +786,8 @@ a.contact-card:hover {
 	}
 
 	.contact-grid {
-		grid-template-columns: 1fr;
-		max-width: 400px;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 600px;
 	}
 
 	.timeline::before {
